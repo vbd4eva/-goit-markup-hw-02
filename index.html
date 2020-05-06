@@ -6,31 +6,41 @@
     <title>Домашняя работа №1</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="page">
     <!-- Шапка сайта -->
-    <header>
-      <nav>
-        <a href="#"><span>Web</span> Studio</a>
+    <header class="page-header">
+      <nav class="nav">
+        <a class="logo nav-link" href="#"
+          ><span class="accent-text">Web</span> Studio</a
+        >
 
         <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a class="current nav-link accent-hover" href="#">Студия</a></li>
+          <li><a class="nav-link accent-hover" href="#">Портфолио</a></li>
+          <li><a class="nav-link accent-hover" href="#">Контакты</a></li>
         </ul>
       </nav>
 
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts">
+        <li>
+          <a class="contacts-link accent-hover" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contacts-link accent-hover" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
 
     <!-- Главное содержимое -->
     <main>
       <!-- Герой -->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <a href="#">Заказать услугу</a>
+      <section class="page-hero" style="background-color: crimson;">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <a class="btn" href="#">Заказать услугу</a>
       </section>
 
       <!-- Особенности -->
@@ -80,7 +90,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section>
+      <section class="page-activity" style="background-color: crimson;">
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li>
@@ -89,7 +99,7 @@
               alt="Ноутбук"
               width="380"
               height="294"
-            /><span>Десктопные приложения</span>
+            /><span class="activity-title">Десктопные приложения</span>
           </li>
           <li>
             <img
@@ -97,7 +107,7 @@
               alt="Смартфон"
               width="380"
               height="294"
-            /><span>Мобильные приложения</span>
+            /><span class="activity-title">Мобильные приложения</span>
           </li>
           <li>
             <img
@@ -105,13 +115,13 @@
               alt="Проэкт на большом экране"
               width="380"
               height="294"
-            /><span>Дизайнерские решения</span>
+            /><span class="activity-title">Дизайнерские решения</span>
           </li>
         </ul>
       </section>
 
       <!-- Наша команда -->
-      <section>
+      <section class="page-team">
         <h2>Наша команда</h2>
         <ul>
           <li lang="en">
@@ -272,20 +282,21 @@
     </main>
 
     <!-- Подвал -->
-    <footer>
+    <footer class="page-footer">
       <!-- Контактные данные -->
       <div>
-        <a href="#"><span>Web</span> Studio</a>
-
-        <address>
-          <span>г. Киев, пр-т Леси Украинки, 26</span>
+        <a class="logo white" href="#"
+          ><span class="accent-text">Web</span> Studio</a
+        >
+        <address class="footer-address">
+          <span class="white-text">г. Киев, пр-т Леси Украинки, 26</span>
           <span>info@example.com</span> <span>+38 099 111 11 11</span>
         </address>
       </div>
 
       <!-- Соц. сети -->
       <div>
-        <b>Присоединяйтесь</b>
+        <b class="white-text">Присоединяйтесь</b>
         <ul>
           <li>
             <a href="#" aria-label="Instagram">Instagram</a>
@@ -302,10 +313,10 @@
         </ul>
       </div>
       <!-- Форма подписки  -->
-      <div><b>Подписаться на рассылку</b></div>
+      <div><b class="white-text">Подпишитесь на рассылку</b></div>
 
       <!-- Копирайт -->
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

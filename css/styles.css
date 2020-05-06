@@ -16,9 +16,9 @@
 */
 
 /*   --color-accent: #2196F3;
-        1. буквы "Web" логотипа в Шапке
-        1.1 буквы "Web" логотипа в Футере
-        2. nav a:hover
+(+)        1. буквы "Web" логотипа в Шапке
+(+)        1.1 буквы "Web" логотипа в Футере
+(+)        2. nav a:hover, a:focus
         3. border-bottom для текушей страницы
         4. цвет фона для .button
         5. :hover инфографики секции "Особенности" - background-color
@@ -27,39 +27,37 @@
         7. :hover Логотипов компаний секции "Постоянные клиенты"
 */
 
-/*  #ffffff - white
-      1. basic background color
-      2. hero h1 color
-      3. .button{ color }
+/*  #ffffff - white (--color-white) (--color-background-primary)
+(+)   1. basic background color  
+(+)      2. hero h1 color
+(+)      3. .button{ color }
       4. :hover инфографики секции "Особенности" - color
-      5. span{color} секции "Чем мы занимаемся"
+(+)      5. .activity-title{color} секции "Чем мы занимаемся"
       6. .team-card{background:color;}
-      7. Буквы "Studio" логотипа в Футере
-      8. Физический адресс в Футере
-      9. color "Призыва" в Футере
+(+)      7. Буквы "Studio" логотипа в Футере
+(+)     8. Физический адресс в Футере
+(+)      9. color "Призыва" в Футере
       10. Цвет иконок соц.сетей в Футере
 */
 
-/*  #212121 - black
-    1. Буквы "Studio" логотипа в Шапке 
-    1.1 nav a {color} цвет ссылок навигации в шапке
-    2. h3{color} секции "Особенности"
-    3. h2{color} секции "Чем мы занимаемся"
-    4. h2,h3{color} секции "Наша команда"
-    5. h2{color} секции "Постоянные клиенты"
-
-
+/* (+)  #212121 - black --color-text-title:#212121;
+(+)  1. Буквы "Studio" логотипа в Шапке 
+(+)  1.1 nav a {color} цвет ссылок навигации в шапке
+(+)  2. h3{color} секции "Особенности"
+(+)  3. h2{color} секции "Чем мы занимаемся"
+(+)  4. h2,h3{color} секции "Наша команда"
+(+)  5. h2{color} секции "Постоянные клиенты"
 */
 
-/*  #2F303A - black #2
-    1. Footer background-color
+/* (+) #2F303A - black #2
+(+)    1. Footer background-color
 */
 
-/*  #757575 - grey
-    1. .contacts {color} в Шапке
-    2. body {color}
-      2.1 текст екции "Особенности"
-      2.2 текст екции "Наша команда"
+/*(+)  #757575 - grey --color-text-primary
+(+)    1. .contacts {color} в Шапке
+(+) 2. body {color}
+      2.1 текст cекции "Особенности"
+      2.2 текст секции "Наша команда"
 */
 
 /*  #AFB1B8 - light grey
@@ -68,13 +66,13 @@
 
 */
 
-/*  #F5F4FA - light light grey
+/*  #F5F4FA - light light grey  --color-background-secondary: #F5F4FA;
     1. background-color инфографики секции "Особенности"
     2. background-color секции "Наша команда"
 */
 
 /*
-rgba(255, 255, 255, 0.6); - цвет текста <address> в футере
+(+) rgba(255, 255, 255, 0.6); - цвет текста <address> в футере
 
 rgba(255, 255, 255, 0.1)
     1. цвет фона :hover иконок соц сетей
@@ -87,3 +85,74 @@ rgba(47, 48, 58, 0.8);
     1. span{ background-color } секции "Чем мы занимаемся"
     
 */
+:root {
+  --color-accent: #2196f3;
+  --color-white: #ffffff;
+  --color-text-primary: #757575;
+  --color-text-title: #212121;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f4fa;
+}
+
+/* Основные компоненты разметки */
+.page {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+}
+/* Заголовки */
+h2,
+h3 {
+  color: var(--color-text-title);
+}
+
+/* Логотип */
+.logo.white {
+  color: var(--color-white);
+}
+/* Кнопка */
+.btn {
+  color: var(--color-white);
+}
+/* Добавляет акцент */
+.accent-text,
+.accent-hover:hover,
+.accent-hover:focus {
+  color: var(--color-accent);
+}
+.white-text {
+  color: var(--color-white);
+}
+
+/* Шапка сайта */
+
+/* Навигация по страницам сайта */
+.nav-link {
+  color: var(--color-text-title);
+}
+
+/* Контакты в "Шапке" */
+.contacts-link {
+  color: var(--color-text-primary);
+}
+
+/* Герой */
+
+.hero-title {
+  color: var(--color-white);
+}
+
+/* Чем мы занимаемся */
+
+.activity-title {
+  color: var(--color-white);
+}
+
+/* Подвал */
+.page-footer {
+  background-color: #2f303a;
+}
+.footer-address {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright { color:rgba(255, 255, 255, 0.4);}

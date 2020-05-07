@@ -109,6 +109,9 @@ h3 {
 .logo.white {
   color: var(--color-white);
 }
+.logo.black {
+  color: var(--color-text-title);
+}
 /* Кнопка */
 .btn {
   color: var(--color-white);
@@ -137,22 +140,29 @@ h3 {
 
 /* Герой */
 
-.hero-title {
+.studio-hero-title {
   color: var(--color-white);
 }
 
 /* Чем мы занимаемся */
 
-.activity-title {
+.studio-activity-title {
   color: var(--color-white);
+}
+
+/* Наша команда */
+.studio-team {
+  background-color: var(--color-background-secondary);
 }
 
 /* Подвал */
 .page-footer {
   background-color: #2f303a;
 }
-.footer-address {
+.page-footer-address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.copyright { color:rgba(255, 255, 255, 0.4);}
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+}

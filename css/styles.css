@@ -112,6 +112,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
+a {
+  text-decoration: none;
+}
 /* Заголовки */
 h2,
 h3 {
@@ -119,6 +122,13 @@ h3 {
 }
 
 /* Логотип */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
 .logo.white {
   color: var(--color-white);
 }
@@ -138,13 +148,16 @@ h3 {
 .white-text {
   color: var(--color-white);
 }
+.nav-link {
+  color: var(--color-text-title);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 
 /* Шапка сайта */
 
 /* Навигация по страницам сайта */
-.nav-link {
-  color: var(--color-text-title);
-}
 
 /* Контакты в "Шапке" */
 .contacts-link {
@@ -172,7 +185,7 @@ h3 {
 .page-footer {
   background-color: #2f303a;
 }
-.page-footer-address {
+.footer-address {
   color: rgba(255, 255, 255, 0.6);
 }
 

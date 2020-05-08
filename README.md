@@ -1,7 +1,6 @@
 # -goit-markup-hw-02
 
-<!--  Frame
-    body.page.(studio portfolio)
+body.page.(studio portfolio)
 
         header.page-header
             nav.navigation
@@ -16,7 +15,6 @@
             address.footer-address
         ?   .footer-social
             .copyright
-Frame  -->
 
 <!-- Studio (index.html)
 

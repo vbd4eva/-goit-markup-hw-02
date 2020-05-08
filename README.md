@@ -16,7 +16,7 @@ body.page.(studio portfolio)
         ?   .footer-social
             .copyright
 
-(index.html)
+index.html
 
     .studio main
         section.studio-hero
@@ -24,10 +24,9 @@ body.page.(studio portfolio)
         section.studio-team
         section.studio-customers
 
-<!-- Studio (index.html)
+portfolio.html
 
--->
-
-<!-- Portfolio (portfolio.html)
-
--->
+    .portfolio main
+        section
+            ul.portfolio-filter
+            ul.portfolio-grid

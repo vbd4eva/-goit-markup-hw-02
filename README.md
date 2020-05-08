@@ -1,10 +1,8 @@
 # -goit-markup-hw-02
 
-Frame
-
 body.page.(studio portfolio)
 
-        header.page-header
+    header.page-header
             nav.navigation
                 .logo.black
                 ul.site-nav
@@ -18,7 +16,13 @@ body.page.(studio portfolio)
         ?   .footer-social
             .copyright
 
-Frame
+(index.html)
+
+    .studio main
+        section.studio-hero
+        section.studio-activity
+        section.studio-team
+        section.studio-customers
 
 <!-- Studio (index.html)
 

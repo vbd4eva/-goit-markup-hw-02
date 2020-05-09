@@ -148,6 +148,22 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.btn-simple {
+  color: var(--color-text-title);
+  background-color: var(--color-background-secondary);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.btn-simple:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
 /* Акценты текста */
 .accent-text,
 .accent-hover:hover,
@@ -204,7 +220,7 @@ li {
 }
 
 /* страница  Студия  */
-
+/**/
 .studio-section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -255,3 +271,24 @@ li {
 .studio-team-social {
 }
 /* Постоянные клиенты */
+/**/
+
+/* Страница Портфолио */
+.portfolio-item {
+}
+.portfolio-item-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-item-text {
+  color: var(--color-white);
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+}
+.portfolio-item-tag {
+  font-size: 16px;
+  line-height: 1.87;
+}
+/**/

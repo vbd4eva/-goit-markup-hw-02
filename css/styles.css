@@ -10,9 +10,16 @@
 
 (+)    #757575 - grey
 
-(+)    #AFB1B8 - light grey
+(+)    #AFB1B8 - light grey 
 
 (+)    #F5F4FA - light light grey
+*/
+
+/*(+)  #757575 - grey --color-text-primary
+(+)    1. .contacts {color} в Шапке
+(+) 2. body {color}
+      2.1 текст cекции "Особенности"
+      2.2 <p?> текст секции "Наша команда"
 */
 
 /*   --color-accent: #2196F3;
@@ -53,13 +60,6 @@
 (+)    1. Footer background-color
 */
 
-/*(+)  #757575 - grey --color-text-primary
-(+)    1. .contacts {color} в Шапке
-(+) 2. body {color}
-      2.1 текст cекции "Особенности"
-      2.2 текст секции "Наша команда"
-*/
-
 /*  #AFB1B8 - light grey
     1. Цвет значков соц.сетей секции "Наша команда"
     2. Цвет Логотипов компаний секции "Постоянные клиенты"
@@ -95,51 +95,60 @@ font-family: 'Raleway', sans-serif;
   font-size:14px
  */
 :root {
-  --color-accent: #2196f3;
-  --color-white: #ffffff;
   --color-text-primary: #757575;
   --color-text-title: #212121;
+
+  --color-accent: #2196f3;
+  --color-white: #ffffff;
+
   --color-background-primary: #ffffff;
   --color-background-secondary: #f5f4fa;
+
+  --color-footer-background: #2f303a;
+  --color-copyright: rgba(255, 255, 255, 0.4);
 }
 
-/* Основные компоненты разметки */
-.page {
-  color: var(--color-text-primary);
-  background-color: var(--color-background-primary);
-}
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-}
+/* Селекторы элемента */
+
 a {
   text-decoration: none;
 }
-/* Заголовки */
+
 h2,
 h3 {
   color: var(--color-text-title);
+  font-weight: 700;
 }
 
-/* Логотип */
+li {
+  list-style-type: none;
+}
+
+/* Селекторы класса */
+.page {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+/* Элементы дизайна */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
 }
-.logo.white {
+.btn-accent {
   color: var(--color-white);
+  background-color: var(--color-accent);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-.logo.black {
-  color: var(--color-text-title);
-}
-/* Кнопка */
-.btn {
-  color: var(--color-white);
-}
-/* Добавляет акцент */
+/* Акценты текста */
 .accent-text,
 .accent-hover:hover,
 .accent-hover:focus {
@@ -148,47 +157,101 @@ h3 {
 .white-text {
   color: var(--color-white);
 }
-.nav-link {
+
+/* Шапка сайта */
+.page-header .logo {
+  color: var(--color-text-title);
+  font-size: 26px;
+  line-height: 1.2;
+}
+.site-nav-link {
   color: var(--color-text-title);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-/* Шапка сайта */
-
-/* Навигация по страницам сайта */
-
-/* Контакты в "Шапке" */
 .contacts-link {
   color: var(--color-text-primary);
-}
-
-/* Герой */
-
-.studio-hero-title {
-  color: var(--color-white);
-}
-
-/* Чем мы занимаемся */
-
-.studio-activity-title {
-  color: var(--color-white);
-}
-
-/* Наша команда */
-.studio-team {
-  background-color: var(--color-background-secondary);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* Подвал */
 .page-footer {
-  background-color: #2f303a;
+  background-color: var(--color-footer-background);
 }
-.footer-address {
+.page-footer .logo {
+  color: var(--color-white);
+  font-size: 22px;
+  line-height: 1.18;
+}
+.page-footer .address {
   color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  font-style: normal;
+}
+.page-footer .subject {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.copyright {
+  color: var(--color-copyright);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
 }
 
-.copyright {
-  color: rgba(255, 255, 255, 0.4);
+/* страница  Студия  */
+
+.studio-section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
+/* Герой */
+.studio-hero-title {
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Особенности */
+.studio-features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.studio-features-text {
+  line-height: 1.71;
+}
+/* Чем мы занимаемся */
+.studio-activity-title {
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Наша команда */
+.studio-team {
+  background-color: var(--color-background-secondary);
+}
+.studio-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.studio-team-role {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.studio-team-social {
+}
+/* Постоянные клиенты */

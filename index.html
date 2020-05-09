@@ -14,22 +14,22 @@
     <!-- Шапка сайта -->
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo black" href="./index.html"
+        <a class="logo" href="./index.html"
           ><span class="accent-text">Web</span> Studio</a
         >
 
         <ul class="site-nav">
           <li>
-            <a class="current nav-link accent-hover" href="./index.html"
+            <a class="current site-nav-link accent-hover" href="./index.html"
               >Студия</a
             >
           </li>
           <li>
-            <a class="nav-link accent-hover" href="./portfolio.html"
+            <a class="site-nav-link accent-hover" href="./portfolio.html"
               >Портфолио</a
             >
           </li>
-          <li><a class="nav-link accent-hover" href="#">Контакты</a></li>
+          <li><a class="site-nav-link accent-hover" href="#">Контакты</a></li>
         </ul>
       </nav>
 
@@ -50,20 +50,22 @@
     <!-- Главное содержимое -->
     <main>
       <!-- Герой -->
-      <section class="studio-hero" style="background-color: crimson;">
-        <h1 class="page-hero-title">Эффективные решения для вашего бизнеса</h1>
-        <a class="btn" href="#">Заказать услугу</a>
+      <section class="studio-hero">
+        <h1 class="studio-hero-title" style="background-color: crimson;">
+          Эффективные решения для вашего бизнеса
+        </h1>
+        <a class="btn-accent" href="#">Заказать услугу</a>
       </section>
 
       <!-- Особенности -->
-      <section>
+      <section class="studio-features">
         <ul>
           <li>
             <a href="#" aria-label="ссылка на статью Внимание к деталям"
               >ссылка на статью Внимание к деталям</a
             >
-            <h3>Внимание к деталям</h3>
-            <p>
+            <h3 class="studio-features-title">Внимание к деталям</h3>
+            <p class="studio-features-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
@@ -72,8 +74,8 @@
             <a href="#" aria-label="ссылка на статью Пунктуальность"
               >ссылка на статью Пунктуальность</a
             >
-            <h3>Пунктуальность</h3>
-            <p>
+            <h3 class="studio-features-title">Пунктуальность</h3>
+            <p class="studio-features-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
@@ -82,8 +84,8 @@
             <a href="#" aria-label="ссылка на статью Планирование"
               >ссылка на статью Планирование</a
             >
-            <h3>Планирование</h3>
-            <p>
+            <h3 class="studio-features-title">Планирование</h3>
+            <p class="studio-features-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
@@ -92,8 +94,8 @@
             <a href="#" aria-label="ссылка на статью Современные технологии"
               >ссылка на статью Современные технологии</a
             >
-            <h3>Современные технологии</h3>
-            <p>
+            <h3 class="studio-features-title">Современные технологии</h3>
+            <p class="studio-features-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -103,7 +105,7 @@
 
       <!-- Чем мы занимаемся -->
       <section class="studio-activity" style="background-color: crimson;">
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="studio-section-title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -111,7 +113,7 @@
               alt="Ноутбук"
               width="380"
               height="294"
-            /><span class="page-activity-title">Десктопные приложения</span>
+            /><span class="studio-activity-title">Десктопные приложения</span>
           </li>
           <li>
             <img
@@ -119,7 +121,7 @@
               alt="Смартфон"
               width="380"
               height="294"
-            /><span class="page-activity-title">Мобильные приложения</span>
+            /><span class="studio-activity-title">Мобильные приложения</span>
           </li>
           <li>
             <img
@@ -127,14 +129,14 @@
               alt="Проэкт на большом экране"
               width="380"
               height="294"
-            /><span class="page-activity-title">Дизайнерские решения</span>
+            /><span class="studio-activity-title">Дизайнерские решения</span>
           </li>
         </ul>
       </section>
 
       <!-- Наша команда -->
       <section class="studio-team">
-        <h2>Наша команда</h2>
+        <h2 class="studio-section-title">Наша команда</h2>
         <ul>
           <li lang="en">
             <img
@@ -143,9 +145,9 @@
               width="278"
               height="260"
             />
-            <h3>John Smith</h3>
-            <p>Product Designer</p>
-            <ul>
+            <h3 class="studio-team-title">John Smith</h3>
+            <p class="studio-team-role">Product Designer</p>
+            <ul class="studio-team-social">
               <li>
                 <a href="#" aria-label="John Smith Instagram"
                   >John Smith Instagram</a
@@ -175,9 +177,9 @@
               width="278"
               height="260"
             />
-            <h3>Marta Stewart</h3>
-            <p>Frontend Developer</p>
-            <ul>
+            <h3 class="studio-team-title">Marta Stewart</h3>
+            <p class="studio-team-role">Frontend Developer</p>
+            <ul class="studio-team-social">
               <li>
                 <a href="#" aria-label="Marta Stewart Instagram"
                   >Marta Stewart Instagram</a
@@ -207,9 +209,9 @@
               width="278"
               height="260"
             />
-            <h3>Robert Jakis</h3>
-            <p>Marketing</p>
-            <ul>
+            <h3 class="studio-team-title">Robert Jakis</h3>
+            <p class="studio-team-role">Marketing</p>
+            <ul class="studio-team-social">
               <li>
                 <a href="#" aria-label="Robert Jakis Instagram"
                   >Robert Jakis Instagram</a
@@ -239,9 +241,9 @@
               width="278"
               height="260"
             />
-            <h3>Martin Doe</h3>
-            <p>UI Designer</p>
-            <ul>
+            <h3 class="studio-team-title">Martin Doe</h3>
+            <p class="studio-team-role">UI Designer</p>
+            <ul class="studio-team-social">
               <li>
                 <a href="#" aria-label="Martin Doe Instagram"
                   >Martin Doe Instagram</a
@@ -269,7 +271,7 @@
 
       <!-- Постоянные клиенты -->
       <section class="studio-customers">
-        <h2>Постоянные клиенты</h2>
+        <h2 class="studio-section-title">Постоянные клиенты</h2>
         <ul>
           <li>
             <a href="#" aria-label="Логотип компании 1">Логотип компании 1</a>
@@ -295,12 +297,12 @@
 
     <!-- Подвал -->
     <footer class="page-footer">
-      <!-- Контактные данные -->
       <div>
-        <a class="logo white" href="./index.html"
+        <a class="logo" href="./index.html"
           ><span class="accent-text">Web</span> Studio</a
         >
-        <address class="footer-address">
+        <!-- Контактные данные -->
+        <address class="address">
           <span class="white-text">г. Киев, пр-т Леси Украинки, 26</span>
           <span>info@example.com</span> <span>+38 099 111 11 11</span>
         </address>
@@ -308,7 +310,7 @@
 
       <!-- Соц. сети -->
       <div>
-        <b class="white-text">Присоединяйтесь</b>
+        <b class="subject white-text">Присоединяйтесь</b>
         <ul>
           <li>
             <a href="#" aria-label="Instagram">Instagram</a>
@@ -325,7 +327,7 @@
         </ul>
       </div>
       <!-- Форма подписки  -->
-      <div><b class="white-text">Подпишитесь на рассылку</b></div>
+      <div><b class="subject white-text">Подпишитесь на рассылку</b></div>
 
       <!-- Копирайт -->
       <p class="copyright">2020 | Developed by GoIT Students</p>

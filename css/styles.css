@@ -110,12 +110,10 @@ font-family: 'Raleway', sans-serif;
 
 /* Селекторы элемента */
 
-a,
-a:visited {
+a {
   text-decoration: none;
   color: inherit;
 }
-
 h2,
 h3 {
   color: var(--color-text-title);

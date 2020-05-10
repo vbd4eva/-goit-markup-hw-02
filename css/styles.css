@@ -110,8 +110,10 @@ font-family: 'Raleway', sans-serif;
 
 /* Селекторы элемента */
 
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 h2,
@@ -282,10 +284,12 @@ li {
   letter-spacing: 0.06em;
 }
 .portfolio-item-text {
-  color: var(--color-white);
-  background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.56;
+}
+.portfolio-item:hover .portfolio-item-text {
+  color: var(--color-white);
+  background: rgba(33, 150, 243, 0.9);
 }
 .portfolio-item-tag {
   font-size: 16px;

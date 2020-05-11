@@ -27,7 +27,7 @@
 (+)        1.1 буквы "Web" логотипа в Футере
 (+)        2. nav a:hover, a:focus
         3. border-bottom для текушей страницы
-        4. цвет фона для .button
+(+)        4. цвет фона для .button
         5. :hover инфографики секции "Особенности" - background-color
         6. :hover значков соц.сетей секции "Наша команда"
             6.6  :hover значков соц.сетей в Футере
@@ -186,6 +186,9 @@ li {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.site-nav-link.current {
+  color: var(--color-accent);
 }
 .contacts-link {
   color: var(--color-text-primary);
